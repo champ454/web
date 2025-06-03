@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>สุขสันต์วันครบรอบ</title>
+  <style>
+    body {
+      background-color: #fce4ec;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: 'Sarabun', sans-serif;
+      margin: 0;
+      flex-direction: column;
+    }
+
+    .cat-container {
+      position: relative;
+      text-align: center;
+    }
+
+    .speech-bubble {
+      position: absolute;
+      top: -160px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #fff;
+      padding: 18px 28px;
+      border-radius: 20px;
+      border: 2px solid #444;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.15);
+      font-size: 1.8rem;
+      color: #222;
+      width: max-content;
+    }
+
+    .speech-bubble::after {
+      content: '';
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-width: 10px;
+      border-style: solid;
+      border-color: white transparent transparent transparent;
+    }
+
+    img.cat {
+      width: 350px;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+  </style>
+</head>
+<body>
+  <div class="cat-container">
+    <div class="speech-bubble">สุขสันต์วันครบรอบงับไดอาน่า 💖</div>
+    <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="black cat" class="cat">
+  </div>
+</body>
+</html>
